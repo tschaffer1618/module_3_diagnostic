@@ -1,5 +1,5 @@
-class PotterService
-  def get_characters(house*)
+class SearchService
+  def get_characters(house)
     oauth_response = conn.get('/characters', params: { house: house })
     JSON.parse(oauth_response.body)
   end
