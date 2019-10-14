@@ -1,5 +1,7 @@
-<h1>Members</h1>
-<%= @characters.count %>
+<h1>Total Members: <%= @characters.count %></h1>
 <% @characters.each do |char| %>
-  <p><%= char['name'] %></p>
+  <h2><%= char.name %></h2>
+  <p>Role: <%= char.role %></p>
+  <p>House: <%= char.house %></p>
+  <p>Patronus: <%= char.patronus %></p>
 <% end %>
