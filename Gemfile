@@ -18,6 +18,8 @@ group :development, :test do
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'launchy'
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'selenium-webdriver'
 end
 
 group :test do

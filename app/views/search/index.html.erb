@@ -1,7 +1,9 @@
 <h1>Total Members: <%= @characters.count %></h1>
-<% @characters.each do |char| %>
-  <h2><%= char.name %></h2>
-  <p>Role: <%= char.role %></p>
-  <p>House: <%= char.house %></p>
-  <p>Patronus: <%= char.patronus %></p>
-<% end %>
+<section class="characters">
+  <% @characters.each do |char| %>
+    <h2 class="name"><%= char.name %></h2>
+    <p class="role">Role: <%= char.role %></p>
+    <p class="house">House: <%= char.house %></p>
+    <p class="patronus">Patronus: <%= char.patronus %></p>
+  <% end %>
+</section>
