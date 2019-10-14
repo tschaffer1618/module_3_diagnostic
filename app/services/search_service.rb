@@ -1,6 +1,6 @@
 class SearchService
   def get_characters(house)
-    oauth_response = conn.get('/characters', params: { house: house })
+    oauth_response = conn.get('characters', house: house)
     JSON.parse(oauth_response.body)
   end
 
